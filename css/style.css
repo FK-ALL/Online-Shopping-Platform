@@ -1,0 +1,1319 @@
+
+
+
+
+.top
+{   
+    height: 60px;
+    width:120%;
+    margin-left: -5%;
+    background:whitesmoke;
+    position: fixed; 
+    top: 0;
+    margin-bottom: 5px;
+    z-index: 1; /*导航栏置顶*/
+}
+
+.topInside
+{   margin: auto;/*居中*/
+    /* background-color: black; */
+    width:60%;
+    text-align: center;
+}
+
+.top ul
+{
+    
+    width: auto;
+    list-style-type: none;
+    white-space:nowrap;
+    overflow: hidden;
+    margin-left: 5%;
+    padding: 0;
+
+}
+
+.top li {
+    float:left; 
+    margin-right:8%;  
+    position: relative;
+    overflow: hidden;
+}
+
+.top li a{
+   
+    display: block; 
+    color:black;
+    text-align: center;
+    padding: 3px;
+    overflow: hidden;
+    text-decoration: none;
+    
+}
+.top li a:hover{
+    /* 指针指向时变色 */
+    background-color:rgb(60, 170, 247) ;
+    border-radius: 5px;  /*角半径*/
+}
+.top ul li ul{
+    /* 二级菜单 */
+    width: auto;
+    margin-left: 0px;
+    background:whitesmoke;
+    position: relative;
+    display: none; /* hover时才弹出二级菜单 */
+
+}
+.top ul li ul li{
+    /* 二级菜单liʾ */
+    
+    float:none;
+    text-align: center;
+}
+.top ul li:hover ul{
+    display: block;
+}
+
+
+.body
+{   width: 1800px;
+    background-color: white;
+
+}
+
+.box1_index 
+{   position:relative;
+    top:60px;
+    width: 70%;
+    left: 20%;
+    height: 200px;
+    color: white;
+    overflow: hidden;
+    
+}
+
+.box1_index .logo{
+    position: relative;
+    width: 160px;
+    height:150px;
+    /* overflow: hidden; */
+    
+}
+.box1_index .logo a{
+    font-size:xx-large;
+    color:#00CBAB;
+    display: block; 
+    text-decoration: none;
+    
+}
+
+.advertisementBox{
+    position: relative;
+    width: 65%;
+    height: 500px;
+    left: 20%;
+    top: 30px;
+}
+
+.advertisementBox .inside{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.advertisementBox .inside .productPicture{
+    position: relative;
+    margin-left: 92.5px;
+    width:400px;
+    height: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.advertisementBox .inside .productLink{
+    position: absolute;
+    top: 50%;
+    margin-left: 150px;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    padding-left:60px;
+    background-color: rgb(243, 225, 192);
+    
+}
+
+.searchbar{
+    position:absolute;
+    top:50px;
+    right: 100px;
+}
+
+.searchbar input{
+    width: 500px;
+    height: 35px;
+    background-color: f6f7f8;
+    outline: none;
+    border-style:solid;
+    border-color: #3caaf7;
+    border-radius: 10px;
+}
+
+.categoryBar{
+    position:fixed;
+    top:100px;
+    height: 800px;
+    width:140px;
+    left:0;
+    background-color:#3caaf7;
+    z-index: 1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+.categoryBar  .firstCategory{
+    text-decoration: none;
+    display: block; 
+    font-size: large;
+    font-weight: bold;
+    color:wheat;
+}
+
+.categoryBar  .secondCategory{
+    text-decoration: none;
+    display: block; 
+    color: #002b24;
+}
+
+.categoryBar .firstCategory:hover{
+    background-color:rgb(253, 127, 127);
+}
+.categoryBar .secondCategory:hover{
+    background-color:rgb(253, 127, 127);
+}
+
+
+.categoryBar ul{
+    list-style-type:none ;
+    
+}
+
+.categoryBar ul b{
+    text-align: center;
+    left: 20px;
+    font-size: larger;
+    color: #3e434b;
+}
+
+.categoryBar ul li{
+
+    text-align: left;
+}
+
+
+
+
+/* 轮播 */
+#max{
+    position:relative;
+    top:30px;
+    left: 18%;
+    width: 65%;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+.le{
+    position: absolute;
+    left: 102px;
+    width: 250px;
+    height: 100%;
+   
+}
+.le .box{
+    width: 100%;
+    height: 20%;
+    background: #4A4D57;
+    
+    
+}
+.le .box a{
+    color:#3caaf7;
+    font-size: larger;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transform: translateY(120%);
+}
+
+.le .box hr{
+    position: relative;
+    top: 60%;
+    height:auto;
+    width: 80%;
+    border-color:#7f8897;
+}
+
+.re{
+    position: absolute;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    
+    /* background-color: #0a1b4f; */
+  }
+  .re ul{
+    list-style-type:none ;
+  }
+  .re ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top :0%;
+    transition: 1s;
+    opacity: 0;
+  }
+  .re ul li img{
+    width: 100%;
+    height: 100%;
+   
+  }
+  #max ol {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5,75px);
+    grid-template-rows: auto;
+    grid-gap: 1em;gap: 1em;
+    float: right;
+    margin-top: 450px;
+    list-style: none;
+    top:0;left:0;
+  }
+  #max ol li {
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    line-height: 20px;
+    float: left;
+    border-radius: 10px;
+  }
+
+
+.Login
+{
+    position: absolute;
+    left: 20%;
+    top: 300px;
+    width: 60%;
+    height: 500px;
+    /* background-color: black; */
+    text-align: center;
+    
+}
+
+.Login h5
+{
+    text-align:center;
+    font-size: smaller; 
+    color:#3caaf7 ;
+}
+.Login h2
+{
+    text-align:center;
+    font-size: xx-large;
+    color:#0a1b4f;
+}
+
+.Login table
+{   
+    text-align: center;
+    position: relative;
+    top:10px;
+    left: 10%;
+    width: 80%;
+
+}
+
+.Login input 
+{   
+    width: 500px;
+    height: 50px;
+    background-color: f6f7f8;
+    outline: none;
+    border-style:solid;
+    border-color: #3caaf7;
+    border-radius: 10px;
+}
+
+
+.Login input::placeholder
+{
+    font-size: 15px;
+    
+
+    color: #7f8897;
+}
+
+.PersonalData
+{
+    position:absolute;
+    margin: auto;
+    top: 10%;
+    left: 30%;
+    width:900px;
+    height:auto;
+    overflow: hidden;
+   
+   /*  background-color: red; */
+}
+
+.PersonalDataNavigation
+{   position: fixed;
+    float:left;
+    background-color:antiquewhite;
+    width: 270px;
+    border-radius: 20px;
+}
+
+.PersonalDataNavigation ul
+{   width: 80%;
+    margin: 10%;
+    list-style-type: none;
+    white-space:nowrap;
+    overflow: hidden;
+    padding: 0;
+}
+
+.PersonalDataNavigation ul li
+{   height: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.PersonalDataNavigation ul li a
+{   
+    display: block; 
+    color:black;
+    text-align: center;
+    
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.PersonalDataNavigation ul li a:hover{
+    /* 指针指向时变色 */
+ 
+ 
+    background-color:rgb(60, 170, 247) ;
+    border-radius: 5px;  /*角半径*/
+}
+
+
+.PersonalData form{
+    color:black;
+    font-size: large;
+    font-weight: bolder;
+    float: right;
+    clear: both;
+}
+
+.PersonalData form h5{
+    text-align:center;
+    font-size: smaller; 
+    color:#3caaf7 ;
+} 
+.PersonalDataTag{
+    width: 10px;
+    text-align:center;
+    font-size: smaller; 
+    color:#3caaf7 ;
+}
+
+.PersonalData form select
+{
+    width: 365;
+    height: 50px;
+    background-color: f6f7f8;
+    outline: none;
+    border-style:solid;
+    border-color: #3caaf7;
+    border-radius: 10px;
+
+    font-size: 110%;
+
+   
+    
+}
+
+.PersonalData input
+{   
+   
+    width: 450px;
+    height: 50px;
+    background-color: f6f7f8;
+    outline: none;
+    border-style:solid;
+    border-color: #3caaf7;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.PersonalData form input::placeholder
+{
+    font-size: 15px;
+    color: #7f8897;
+}
+
+
+.PersonalData form textarea
+{
+    width: 450px;
+    height: 150px;
+    background-color: f6f7f8;
+    outline: none;
+    border-style:solid;
+    border-color: #3caaf7;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.PersonalData form textarea::placeholder
+{
+    font-size: 15px;
+    color: #7f8897;
+}
+
+.category{
+    position:relative;
+    width: 67%;
+    height:100px;
+    margin: 50px;
+    left: 250px;
+    background-color:#70e6d4;
+    
+    font-size: large; 
+    color:#3caaf7 ;
+    padding: 1%;
+    
+}
+
+.category i{
+    font-size: small;
+    color: #3e434b;
+} 
+.productPage{
+    position: relative;
+    left: 17%;
+    width:1250px;
+    height: auto;
+    top:30px
+}
+.productPage .mainPart{
+    position: relative;
+    margin: 50px;
+    width:1150px ;
+    height: 550px;
+    background-color: rgb(250, 243, 229);
+}
+.productPage .mainPart .productPicture{
+    position: relative;
+    margin:20px;
+    top: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: whitesmoke;
+}
+
+.productPage .mainPart .productPictureChange{
+    position: absolute;
+    width: 450px;
+    height: 100px;
+    left: 20px;
+    top:430px;
+    
+   
+}
+
+.productPage .mainPart .productPictureChange ul{
+    list-style-type: none;
+    cursor:pointer;
+}
+
+.productPage .mainPart .productPictureChange ul li{
+    position: relative;
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    top:-15px;
+    left: -40px;
+    float: left;
+    background-color:whitesmoke;
+}
+.productPage .mainPart .productPictureChange ul li img{
+    width:70px;
+    height:70px;
+}
+
+.productPage .mainPart  .productInfo{
+    position: absolute;
+    width:600px;
+    height: 515px;
+    top:20px;
+    right: 20px;
+}
+
+.productPage .mainPart  .productInfo .productName{
+    position: absolute;
+    margin: 15px;
+    font-weight: bolder;
+    
+}
+
+.productPage .mainPart  .productInfo .word{
+    font-size:small;
+    color:#7f8897;
+}
+.productPage .mainPart  .productInfo .price{
+    position: absolute;
+    top:50px;
+    margin: 15px;
+    
+}
+
+.productPage .mainPart  .productInfo .price .number{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 30px;
+    color: red;
+}
+
+.productPage .mainPart  .productInfo .address{
+    position: absolute;
+    top:120px;
+    margin: 15px;
+}
+
+.productPage .mainPart  .productInfo .address .destination{
+    margin-left: 30px;
+    color:#3e434b;
+    font-size: 80%;
+
+}  
+
+.productPage .mainPart  .productInfo .purchaseType{
+    position: absolute;
+    width: 80%;
+    top:165px;
+    height: 100px;
+    margin: 15px;
+}
+
+.productPage .mainPart  .productInfo .purchaseType .block{
+    position: absolute;
+    width: 550px;
+    left:70px;
+    top:-15px;
+    height: auto;
+    
+}
+
+.productPage .mainPart  .productInfo .purchaseType input{
+    position: relative;
+    cursor:pointer;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: auto;
+    
+    height: 25px;
+    
+    outline: none;
+    border-style:solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.productPage .mainPart  .productInfo .purchaseType input:focus{
+    border-color: red;
+}
+
+.productPage .mainPart  .productInfo .purchaseNumber{
+    position: absolute;
+    width: 80%;
+    bottom: 75px;
+    height: 60px;
+    margin: 15px;
+}
+
+.productPage .mainPart  .productInfo .purchaseNumber input{
+    margin-left: 60px;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border-style:solid;
+    border-radius: 5px;
+    border-color:#028aeb;
+}
+
+.productPage .mainPart  .productInfo .purchase{
+    position: absolute;
+    width: 80%;
+    bottom: 10;
+    height: 40px;
+    margin: 15px;
+    padding: 10px;
+    
+}
+
+.productPage .mainPart  .productInfo .purchase input{
+    margin-left: 60px;
+    width: 150px;
+    height: 40px;
+    cursor:pointer;
+    border-style:solid;
+    border-radius: 5px;
+    border-color:#028aeb;
+}
+
+.productPage .detailsPart{
+    position: relative;
+    width: 1110px;
+    top: 20px;
+    left:50px;
+    padding: 20px;
+    height: auto;
+    background-color: rgb(250, 243, 229);
+}
+
+.productPage .detailsPart .productDetail{
+    position:relative;
+    width:60%;
+    height: 250px;
+    left: 30px;
+}
+
+.productPage .detailsPart .productDetail .word{
+    width:auto;
+    height: 21px;
+    margin-right: 50px;
+    font-size:small;
+    color:#7f8897;
+    line-height: 30px;
+    float: left;
+}
+
+.productPage .detailsPart .picture{
+    position:relative;
+    margin-top: 30px;
+    left:15%;
+    width:800px;
+    height: 600px;
+    
+}
+
+.productPage .detailsPart .picture img{
+    width: 800px;
+    height: 600px;
+}
+
+.productPage  .commentsPart{
+    position: relative;
+    width: 1010px;
+    margin: 50px;
+    left:50px;
+    padding: 20px;
+    height: auto;
+    
+    background-color: rgb(250, 243, 229);
+}
+
+.productPage  .commentsPart .comment{
+    position: relative;
+    width: 98%;
+    height: 150px;
+    padding: 8px;
+    border-style:solid;
+    border-color: #4A4D57;
+    margin-top:10px;
+}
+
+.productPage  .commentsPart .comment .userAndTime{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    color: #7f8897;
+    font-size: small;
+
+}
+
+.productPage  .commentsPart .addComment{
+    width: 100%;
+    height: 200px;
+    border-color:#028aeb;
+    border-radius: 10px;
+    outline: none;
+    font-size: large;
+    padding: 1%;
+
+}
+
+.productPage  .commentsPart .addComment .addCommentSubmit{
+    position: relative;
+    right:5%;
+
+}
+
+.category a{
+    text-decoration: none;
+    width: 80px;
+    float: left;
+    display: block;
+    color:#028aeb;
+    font-weight: bolder;
+}
+
+
+.purchaseCart{
+    position: relative;
+    top:50px;
+    width: 60%;
+    left:20%;
+    height: auto;
+}
+
+.purchaseCart .product{
+    position: relative;
+    margin-top: 15px;
+    width: 85%;
+    height: 150px;
+    
+}
+
+.purchaseCart .product .picture{
+    position: relative;
+    height: 120px;
+    width:150px;
+    float: left;
+    
+}
+
+.purchaseCart .product .info{
+    position: relative;
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+    color: #3e434b;
+}
+
+.purchaseCart .product .info .purchaseNumber{
+    position: relative;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #3caaf7;
+    outline: none;
+}
+
+.purchaseCart .product .info .price{
+    width: 80px;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    border-color: darkred;
+    cursor: default;
+    outline: none;
+}
+
+
+.purchaseCart .product .delete{
+    cursor: pointer;
+    position: absolute;
+    height:50px;
+    width: 150px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 120%;
+    background-color:#028aeb;
+    right: 10px;
+    bottom: 50px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+
+   
+
+.purchaseCart .settlement{
+    cursor: pointer;
+
+    position: relative;
+    bottom: 10px;
+    left: 25%;
+    width: 300px;
+    height: 50px;
+    margin-top: 100px;
+    background-color: #3caaf7;
+    color: #f6f7f8;
+    font-weight: bolder;
+    font-size: larger;
+    outline: none;
+    border-style:solid;
+    border-color: #3e434b;
+    border-radius: 10px;
+}
+
+.order{
+    position: relative;
+    top:50px;
+    width: 60%;
+    left:20%;
+    height: auto;
+}
+
+.order .product{
+    position: relative;
+    margin-top: 15px;
+    width: 85%;
+    height: 150px;
+}
+.order .product .info{
+    position: relative;
+    height: 180px;
+    width: 1000px;
+    float: left;
+    font-weight: bold;
+    color: #028aeb;
+    
+}
+
+.order .product .info hr{
+    position: absolute;
+    width: 1000px;
+    top:150px;
+    color: #3e434b;
+}
+
+.order .product .delete{
+    cursor: pointer;
+    position: absolute;
+    height:50px;
+    width: 150px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 120%;
+    background-color:#f54747;
+    right: 10px;
+    bottom: 130px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.order .product .confirm{
+    cursor: pointer;
+    position: absolute;
+    height:50px;
+    width: 150px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 120%;
+    background-color:#028aeb;
+    right: 10px;
+    bottom: 55px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.order .product .completed{
+    cursor: default;
+    position: absolute;
+    height:50px;
+    width: 150px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 120%;
+    background-color:#4A4D57;
+    right: 10px;
+    bottom: 70%;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    outline: none;
+}
+
+.order .product .addComment{
+    cursor: pointer;
+    position: absolute;
+    height:50px;
+    width: 150px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 120%;
+    background-color:#00CBAB;
+    right: 10px;
+    bottom: 30%;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    outline: none;
+}
+
+.admin{
+    position: relative;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    margin-top: 10%;
+}
+
+.admin .link{
+    position: relative;
+    MARGIN-TOP: 1%;
+    width: 500px;
+    height: 50px;
+    background-color: #22a4ff;
+    left: 33%;
+    outline: none;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.admin .link a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    padding-top: 1%;
+}
+.footer
+{
+    position: relative; 
+    bottom: 0; 
+    width: 100%;
+    top:60px; 
+    height: auto;/*脚部的高度*/ 
+    text-align: center;
+    color: #7f8897;
+    clear:both; 
+}
+.footer hr{
+    width: 80%;
+}
+
+
+
+/*
+ 
+
+.MainPart h5
+{
+    text-align:center;
+    font-size: smaller; 
+    color:#3caaf7 ;
+}
+.MainPart h2
+{
+    text-align:center;
+    font-size: xx-large;
+    color:#0a1b4f;
+}
+
+
+.LeftText  
+{
+    position: relative;
+    left:0;
+    width: 49%;
+    height:auto;
+    float: left;
+    overflow: hidden;
+    
+  
+}
+.RightText
+{
+    position: relative;
+    
+    right: 0%;
+    width: 49%;
+    height: auto;
+    float: right;
+   
+   
+}
+
+.LeftText h3
+{
+    color:#0a1b4f;
+}
+.LeftText li
+{   color:#3c4452 ;
+    line-height: 15px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 1rem!important;
+    -webkit-font-smoothing: antialiased;
+}
+.LeftText p
+{
+    color:#7f8897 ;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+}
+
+.RightTex h3
+{
+    color:#0a1b4f;
+}
+.RightText li
+{   color:#3c4452 ;
+    line-height: 15px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 1rem!important;
+    -webkit-font-smoothing: antialiased;
+}
+.RightText p
+{
+    color:#7f8897 ;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+}
+
+
+.RightPicture
+{
+    position: relative;
+    right:0;
+    width: 49%;
+    height: auto;
+    float:right;
+    
+}
+
+.LeftPicture
+{
+    position: relative;
+    Left:0;
+    width: 49%;
+    height: auto;
+    float:left;
+  
+}
+
+.MainPartBlock
+{   
+    width:100%;
+    height: auto;
+    clear: both;
+    
+}
+
+.LeftHoverTurnColor
+{   
+    position: relative;
+    left:0;
+    width: 40%;
+    height:auto;
+    
+    float: left;
+    border-radius: 7px;
+    
+    text-align: center;
+    padding: 5%;
+    overflow: hidden;
+    
+
+   
+} 
+
+.LeftHoverTurnColor:hover
+{
+    background-color: #007bff;
+}
+
+.LeftHoverTurnColor h3
+{
+    color:#0a1b4f;
+}
+.LeftHoverTurnColor li
+{   color:#3c4452 ;
+    line-height: 15px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 1rem!important;
+    -webkit-font-smoothing: antialiased;
+}
+.LeftHoverTurnColor p
+{
+    color:#3c4452 ;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+}
+
+.RightHoverTurnColor
+{   
+    position: relative;
+    right:0;
+    width: 40%;
+    height:auto;
+    
+    float: right;
+    border-radius: 7px;
+    
+    text-align: center;
+    padding: 5%;
+    overflow: hidden;
+    
+
+   
+} 
+
+.RightHoverTurnColor:hover
+{
+    background-color: #007bff;
+}
+
+.RightHoverTurnColor h3
+{
+    color:#0a1b4f;
+}
+.RightHoverTurnColor li
+{   color:#3c4452 ;
+    line-height: 15px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 1rem!important;
+    -webkit-font-smoothing: antialiased;
+}
+.RightHoverTurnColor p
+{
+    color:#3c4452 ;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+}
+
+.LeftRelatedLinks
+{
+    position: relative;
+    left:0;
+    width: 400PX;
+    height:600px;
+    
+    float: left;
+    border-radius: 7px;
+    
+    text-align: center;
+    padding: 3%;
+    overflow: hidden;
+
+   
+}
+
+.RightRelatedLinks
+{
+    position: relative;
+    right:0;
+    width: 400PX;
+    height:600px;
+    
+    float: right;
+    border-radius: 7px;
+    
+    text-align: center;
+    padding: 3%;
+    overflow: hidden;
+
+   
+}
+
+.RelatedLinksPicture 
+{
+    position: relative;
+    width:100%;
+    height: 50%;
+    border-radius: 15px;
+    overflow: hidden;
+
+  
+}
+
+
+.RelatedLinksPicture img
+{   
+    height: 100%;
+    width: 100%;
+}
+
+
+.RelatedLinksLink
+{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 60%;
+    height: 30%;
+    border-radius: 20px;
+    padding: 5%; 
+
+    background-color: white;
+
+}
+.RelatedLinksLink a
+{
+    display: block; 
+    color:#0a1b4f;
+    overflow: hidden;
+    text-decoration: none; 
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+
+}
+
+.RelatedLinksLink a:hover
+{
+    color: #007bff;
+}
+
+
+.RelatedLinksLink h6
+{
+    line-height: 28px;
+    font-family: "Roboto",sans-serif;
+    color: #7f8897;
+}
+
+.ReadMoreButton
+{   
+    position: absolute;
+    bottom: 10%;
+    left: 28%;
+    width: 150px;
+    height: 40px;
+    
+
+    border-radius: 30px;
+}
+
+.ReadMoreButton a
+{   
+    
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    color:white;
+    display: block;
+    background-color: #3caaf7;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.ReadMoreButton a:hover
+{   
+  background-color:wheat;
+}
+*/

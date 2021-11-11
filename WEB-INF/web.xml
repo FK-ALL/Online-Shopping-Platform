@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <welcome-file-list>
+    <welcome-file>GetIdMap</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+        
+    <servlet-name>Register</servlet-name>
+        
+    <servlet-class>servlets.Register</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>Register</servlet-name>
+        
+    <url-pattern>/Register</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>Login</servlet-name>
+        
+    <servlet-class>servlets.Login</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>Login</servlet-name>
+        
+    <url-pattern>/Login</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>Logout</servlet-name>
+        
+    <servlet-class>servlets.Logout</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>Logout</servlet-name>
+        
+    <url-pattern>/Logout</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>Change</servlet-name>
+        
+    <servlet-class>servlets.Change</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>Change</servlet-name>
+        
+    <url-pattern>/Change</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>GetAddress</servlet-name>
+        
+    <servlet-class>servlets.GetAddress</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>GetAddress</servlet-name>
+        
+    <url-pattern>/GetAddress</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>SetAddress</servlet-name>
+        
+    <servlet-class>servlets.SetAddress</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>SetAddress</servlet-name>
+        
+    <url-pattern>/SetAddress</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>DeleteAddress</servlet-name>
+        
+    <servlet-class>servlets.DeleteAddress</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>DeleteAddress</servlet-name>
+        
+    <url-pattern>/DeleteAddress</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>GetProductInfo</servlet-name>
+        
+    <servlet-class>servlets.GetProductInfo</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>GetProductInfo</servlet-name>
+        
+    <url-pattern>/GetProductInfo</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>GetProductPic</servlet-name>
+        
+    <servlet-class>servlets.GetProductPic</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>GetProductPic</servlet-name>
+        
+    <url-pattern>/GetProductPic</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>GetProduct</servlet-name>
+        
+    <servlet-class>servlets.GetProduct</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>GetProduct</servlet-name>
+        
+    <url-pattern>/GetProduct</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>CategoryPage</servlet-name>
+        
+    <servlet-class>servlets.CategoryPage</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>CategoryPage</servlet-name>
+        
+    <url-pattern>/CategoryPage</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>SearchProduct</servlet-name>
+        
+    <servlet-class>servlets.SearchProduct</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>SearchProduct</servlet-name>
+        
+    <url-pattern>/SearchProduct</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>GetIdMap</servlet-name>
+        
+    <servlet-class>servlets.GetIdMap</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>GetIdMap</servlet-name>
+        
+    <url-pattern>/GetIdMap</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>GetCart</servlet-name>
+        
+    <servlet-class>servlets.GetCart</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>GetCart</servlet-name>
+        
+    <url-pattern>/GetCart</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>UpdateCart</servlet-name>
+        
+    <servlet-class>servlets.UpdateCart</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>UpdateCart</servlet-name>
+        
+    <url-pattern>/UpdateCart</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>UpdatePurchaseNumber</servlet-name>
+        
+    <servlet-class>servlets.UpdatePurchaseNumber</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>UpdatePurchaseNumber</servlet-name>
+        
+    <url-pattern>/UpdatePurchaseNumber</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>AddOrder</servlet-name>
+        
+    <servlet-class>servlets.AddOrder</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>AddOrder</servlet-name>
+        
+    <url-pattern>/AddOrder</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>GetOrder</servlet-name>
+        
+    <servlet-class>servlets.GetOrder</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>GetOrder</servlet-name>
+        
+    <url-pattern>/GetOrder</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>CompleteOrder</servlet-name>
+        
+    <servlet-class>servlets.CompleteOrder</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>CompleteOrder</servlet-name>
+        
+    <url-pattern>/CompleteOrder</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>AddComment</servlet-name>
+        
+    <servlet-class>servlets.AddComment</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>AddComment</servlet-name>
+        
+    <url-pattern>/AddComment</url-pattern>
+      
+  </servlet-mapping>
+
+  <servlet>
+        
+    <servlet-name>AdministratorLogin</servlet-name>
+        
+    <servlet-class>servlets.AdministratorLogin</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>AdministratorLogin</servlet-name>
+        
+    <url-pattern>/AdministratorLogin</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>AddProduct</servlet-name>
+        
+    <servlet-class>servlets.AddProduct</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>AddProduct</servlet-name>
+        
+    <url-pattern>/AddProduct</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>UpdateSearchProduct</servlet-name>
+        
+    <servlet-class>servlets.UpdateSearchProduct</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>UpdateSearchProduct</servlet-name>
+        
+    <url-pattern>/UpdateSearchProduct</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>DeleteProduct</servlet-name>
+        
+    <servlet-class>servlets.DeleteProduct</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>DeleteProduct</servlet-name>
+        
+    <url-pattern>/DeleteProduct</url-pattern>
+      
+  </servlet-mapping>
+  <servlet>
+        
+    <servlet-name>UpdateProduct</servlet-name>
+        
+    <servlet-class>servlets.UpdateProduct</servlet-class>
+      
+  </servlet>
+  <servlet-mapping>
+        
+    <servlet-name>UpdateProduct</servlet-name>
+        
+    <url-pattern>/UpdateProduct</url-pattern>
+      
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>filters.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+
+  <context-param>
+    <param-name>redirectPage</param-name>
+    <param-value>/login.jsp</param-value>
+  </context-param>
+  <context-param>
+    <param-name>needCheckedUrls</param-name>
+    <param-value>/personalData.jsp,/purchaseCart.jsp,/GetCart,/order.jsp,/GetOrder,/productPage.jsp,/GetProduct</param-value>
+  </context-param>
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>filters.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>
